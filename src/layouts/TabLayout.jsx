@@ -2,7 +2,6 @@ import { Suspense, useEffect, useState, useRef } from 'react';
 import { MdCancel, MdClose, MdMoreVert } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
-import DashboardPage from '../pages/DashboardPage';
 import { addTab, removeTab, setActiveTab } from '../store/tabSlice';
 import { routeComponentMapping } from '../utils/routeComponentMapping';
 import ErrorBoundary from '../utils/ErrorBoundary';
