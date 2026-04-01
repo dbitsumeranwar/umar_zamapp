@@ -1,6 +1,4 @@
-import { ChartofAccounts } from "../pages/accounting/chartOfAccounts";
 import DashboardPage from "../pages/DashboardPage";
-
 import CompareFlashReport from "../pages/dashboard/CompareFlashReport";
 import FlashSalesReport from "../pages/dashboard/FlashReport";
 
