@@ -1,24 +1,47 @@
 import DashboardPage from "../pages/DashboardPage";
+import { ChartofAccounts } from "../pages/accounting/chartOfAccounts";
 import CompareFlashReport from "../pages/dashboard/CompareFlashReport";
 import FlashSalesReport from "../pages/dashboard/FlashReport";
+import InterCompantJV from "../pages/inter-company-jv/InterCompantJV";
+import CreateInterCompantJV from "../pages/inter-company-jv/CreateInterCompantJV";
+import CreateCompany from "../pages/company/createcompany";
+import UpdateCompany from "../pages/company/UpdateCompany";
+import CompanyList from "../pages/company/companyList";
+import CompanyDetail from "../pages/company/CompanyDetail";
 
 const rootFolder = import.meta.env.VITE_ROOT_FOLDER || "";
 export const routeComponentMapping = {
   [rootFolder + "/dashboard"]: { component: DashboardPage, name: "Dashboard" },
    [rootFolder + "/flash-sales-report"]: { component: FlashSalesReport, name: "Flash Sales Report" },
    [rootFolder + "/compare-flash-report"]: { component: CompareFlashReport, name: "Compare Flash Report" },
-  // [rootFolder + "/chartofaccounts"]: {
-  //   component: ChartofAccounts,
-  //   name: "Chart of Accounts",
-  // },
-  // [rootFolder + "/inter-company-jv"]: {
-  //   component: InterCompantJV,
-  //   name: "Inter Company JV",
-  // },
-  // [rootFolder + "/create-inter-company-jv"]: {
-  //   component: CreateInterCompantJV,
-  //   name: "Create Inter Company JV",
-  // },
+  [rootFolder + "/chartofaccounts"]: {
+    component: ChartofAccounts,
+    name: "Chart of Accounts",
+  },
+  [rootFolder + "/inter-company-jv"]: {
+    component: InterCompantJV,
+    name: "Inter Company JV",
+  },
+  [rootFolder + "/create-inter-company-jv"]: {
+    component: CreateInterCompantJV,
+    name: "Create Inter Company JV",
+  },
+   [rootFolder + "/addcompany"]: {
+    component: CreateCompany,
+    name: "Add Company",
+  },
+  [rootFolder + "/update-company"]: {
+    component: UpdateCompany,
+    name: "Update Company",
+  },
+  [rootFolder + "/companieslist"]: {
+    component: CompanyList,
+    name: "Company List",
+  },
+  [rootFolder + "/company-detail"]: {
+    component: CompanyDetail,
+    name: "Company Detail",
+  },
   // [rootFolder + "/chartofaccounts"]: {
   //   component: ChartofAccounts,
   //   name: "Chart of Accounts",
@@ -30,22 +53,7 @@ export const routeComponentMapping = {
   //   name: "User Profile",
   // },
   // [rootFolder + "/adduser"]: { component: AddUser, name: "Add User" },
-  // [rootFolder + "/addcompany"]: {
-  //   component: Createcompany,
-  //   name: "Add Company",
-  // },
-  // [rootFolder + "/update-company"]: {
-  //   component: UpdateCompany,
-  //   name: "Update Company",
-  // },
-  // [rootFolder + "/companieslist"]: {
-  //   component: CompanyList,
-  //   name: "Company List",
-  // },
-  // [rootFolder + "/company-detail"]: {
-  //   component: CompanyDetail,
-  //   name: "Company Detail",
-  // },
+ 
   // [rootFolder + "/add-department"]: {
   //   component: AddDepartment,
   //   name: "Add Department",
